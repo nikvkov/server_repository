@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sities</title>
+    </head>
+    <body>
+        <table>
+            <thead><th>Id</th><th>City</th><th>Country</th></thead>
+            {{range . }}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.City}}</td>
+                <td>{{.Country}}</td>
+            
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
